@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'JetBrains Mono';
+} body {
+    padding: 15px;
+    background: rgb(19, 18, 18);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+} div {
+    border: 1px solid rgb(56, 50, 50);
+} p {
+    margin-top: 10px;
+} div#calc-el {
+    background: rgba(6, 20, 65, 0.2);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+} input {
+    padding:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2em;
+    border: none;
+    border-radius: 7px;
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: right;
+} table {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    empty-cells: hide;
+    border-spacing: 5px;
+} table td {
+    background: rgb(56, 55, 53);
+    /*border: 2px solid crimson;*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+} table td:hover {
+    background-color: rgba(56, 55, 53,.2);
+} table td:active {
+    background-color: rgba(156, 154, 150, 0.2);
+    color: white;
+} table td.symbols {
+    font-weight: bold;
+} table td.symbols:active {
+    background: green;
+    color: yellow;
+}
+
+
+
+#cancel-el {
+    color: crimson;
+} #cancel-el:active {
+    background: red;
+    color: white;
+} #equal-el {
+    background: orange;
+    color: black;
+}#equal-el:active {
+    background: orangered;
+} #delete-el {
+    background: crimson;
+} #delete-el:focus {
+    background: red;
+} :is(#delete-el,#equal-el):hover {
+    opacity: 20%;
+} :is(#delete-el,#equal-el):active {
+    opacity: 100%;
+}
+
+footer a {
+    color: grey;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+button {
+    font-weight: 700;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: grey;
+}
+button:hover {
+    cursor: grab;
+}
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    #calc-el {
+        background-color: #cfcfcf;
+    }
+    input {
+        color: black;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Simple Calc with Javascript</title>
+        <link rel="stylesheet" href="simple calc.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Simple Calculator with <br>JavaScript</h1>
+        <div id="calc-el">
+            <section id="top-el">
+                <input type="text" inputmode="none" id="input-el" placeholder="" onblur="this.focus()" autofocus>
+                <p id="ans-el"></p>
+            </section>
+            <section id="bottom-el">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="symbols" id="cancel-all-el">C</td>
+                        <td class="symbols" id="delete-el">✕</td>
+                    </tr>
+                    <tr>
+                        <td id="td1" onclick="one1()">1</td>
+                        <td id="td2" onclick="two2()">2</td>
+                        <td id="td3" onclick="three3()">3</td>
+                        <td class="symbols" id="add-el">+</td>
+                    </tr>
+                    <tr>
+                        <td id="td4" onclick="four4()">4</td>
+                        <td id="td5" onclick="five5()">5</td>
+                        <td id="td6" onclick="six6()">6</td>
+                        <td class="symbols" id="minus-el">-</td>
+                    </tr>
+                    <tr>
+                        <td id="td7" onclick="seven7()">7</td>
+                        <td id="td8" onclick="eight8()">8</td>
+                        <td id="td9" onclick="nine9()">9</td>
+                        <td class="symbols" id="multiply-el">×</td>
+                    </tr>
+                    <tr>
+                        <td id="td0" onclick="inputEl.value += '0'">0</td>
+                        <td id="td." onclick="inputEl.value += '.'">.</td>
+                        <td class="symbols" id="modulus-el" title ="Modulus: Gives the remainder of a divided number. E.g 5 modulus 2 gives a remainder of 1">%</td>
+                        <td class="symbols" id="divide-el">/</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="symbols"></td>
+                        <td class="symbols" id="carry-el">^</td>
+                        <td class="symbols" id="equal-el">=</td>
+                    </tr>
+                </table>
+
+                <button onclick="window.print()">Print this page</button>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2023 <a href="https://wa.me/+2348142340182?text=Hello%20Ehi%20.%20I%20checked%20your%20first%20JavaScript%20calculator!">Ehi Ejakhian</a> All rights reserved.</p>
+        </footer>
+        <script src="simple calc.js"></script>
+    </body>
+</html>
